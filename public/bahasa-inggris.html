@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Inggris</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <nav class="p-5 bg-primary md:flex md:items-center md:justify-between">
+        <div class="md:flex md:justify-between md:items-center gap-8">
+            <div class="flex justify-between items-center ">
+                <span class="text-2xl font-logo cursor-pointer">
+                    ADV
+                </span>
+                <!-- SEARCH MOBILE -->
+                <div class="block md:hidden">
+                    <input class="relative rounded-md w-64" type="text" placeholder="Search...">
+                </div>
+                <div class="burger-mobile text-3xl cursor-pointer md:hidden block ">
+                    <span class="menu material-symbols-outlined" name="menu">
+                        menu
+                    </span>
+                    <span class="close material-symbols-outlined" name="close">
+                        close
+                    </span>
+                </div>
+
+            </div>
+            <ul
+                class="md:flex md:items-center  md:z-auto md:static absolute bg-primary w-full md:w-auto h-screen md:h-auto md:py-0 py-4 left-[-100%] transition-all duration-[.3s] ease-in-out">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="index.html" class="text-xl animasi-nav">Home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="list.html" class="text-xl animasi-nav">List</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hidden md:block">
+            <input class="relative rounded-md" type="text" placeholder="Search...">
+            <span class="absolute right-5 material-symbols-outlined">
+                search
+            </span>
+        </div>
+    </nav>
+
+    <!-- BODY -->
+    <section class="bg-secon  md:p-20">
+        <div class="container mx-auto border bg-white p-10">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-xl md:text-3xl p-6">Bahasa Inggris</h1>
+                <img class="w-[10rem] md:w-[20rem]" src="/assets/buku-inggris.png" alt="">
+                <div class="flex flex-col gap-4 pt-4 md:p-20 text-justify text-sm md:text-xl">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ratione? Quas ad ut, cupiditate quo quis error harum voluptatum exercitationem facere debitis illum commodi molestiae vero? Porro sunt hic architecto magnam sed voluptatum odit, dolor corporis omnis est, provident explicabo cumque eligendi! Voluptatibus beatae tempore fugiat laudantium nobis voluptatem suscipit quos mollitia esse commodi, similique ducimus nesciunt recusandae veritatis accusamus. Quaerat quae odio similique, et facilis qui pariatur aliquam reiciendis corrupti. Impedit quos officia recusandae ex dolores sed eveniet excepturi obcaecati debitis nobis nulla quas vitae illo tempora fugit pariatur commodi quasi sit, eum porro, explicabo saepe eos! Fugit, perferendis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ratione? Quas ad ut, cupiditate quo quis error harum voluptatum exercitationem facere debitis illum commodi molestiae vero? Porro sunt hic architecto magnam sed voluptatum odit, dolor corporis omnis est, provident explicabo cumque eligendi! Voluptatibus beatae tempore fugiat laudantium nobis voluptatem suscipit quos mollitia esse commodi, similique ducimus nesciunt recusandae veritatis accusamus. Quaerat quae odio similique, et facilis qui pariatur aliquam reiciendis corrupti. Impedit quos officia recusandae ex dolores sed eveniet excepturi obcaecati debitis nobis nulla quas vitae illo tempora fugit pariatur commodi quasi sit, eum porro, explicabo saepe eos! Fugit, perferendis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ratione? Quas ad ut, cupiditate quo quis error harum voluptatum exercitationem facere debitis illum commodi molestiae vero? Porro sunt hic architecto magnam sed voluptatum odit, dolor corporis omnis est, provident explicabo cumque eligendi! Voluptatibus beatae tempore fugiat laudantium nobis voluptatem suscipit quos mollitia esse commodi, similique ducimus nesciunt recusandae veritatis accusamus. Quaerat quae odio similique, et facilis qui pariatur aliquam reiciendis corrupti. Impedit quos officia recusandae ex dolores sed eveniet excepturi obcaecati debitis nobis nulla quas vitae illo tempora fugit pariatur commodi quasi sit, eum porro, explicabo saepe eos! Fugit, perferendis?</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="flex justify-center items-center bg-[#e4d1b8] shadow-md h-12">
+        <div class="text-center">
+            <h1>Copyright 2023 by Ibrahim Cahya Gumilar</h1>
+        </div>
+    </footer>
+
+    <script src="./app.js" type="application/javascript"></script>
+</body>
+
+</html>

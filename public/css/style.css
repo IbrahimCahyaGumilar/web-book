@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+@apply p-0 m-0;
+}
+
+@layer utilities {
+
+  html{
+  scroll-behavior: smooth;
+}
+
+    nav ul li a:hover,
+    nav ul li a.active {
+    color: white ;
+}
+
+.animasi-nav::after {
+  @apply  content-[''] bg-white h-[2px] w-0 rounded-xl block ;
+  transition: 0.3s ease-in-out ;
+  }
+
+  .animasi-nav:hover::after {
+    @apply  content-[''] bg-white h-[2px] w-[100%] rounded-xl block ;
+  transition: 0.3s ease-in-out ;
+ }
+
+ .burger-mobile .close {
+  display: none;
+}
+
+.burger-mobile.active .close {
+  display: block;
+}
+
+.burger-mobile.active .menu {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media screen  and (max-width:991px) {
+
+  ul {
+      @apply left-0 ;
+  }
+
+  .nav-fix {
+      display: flex;
+      justify-content: space-between;
+      background: #555;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+  }
+
+  ul.active {
+      left: 0;
+  }   
+
+}  
+}
+
+
